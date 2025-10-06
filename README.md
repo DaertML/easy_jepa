@@ -19,3 +19,5 @@ As JEPAs generate predictions in the embedding (aka latent space), the human eye
 Somehow, the RCDM repo is archived and I was unable to get it working for IJEPA; so decided to get a couple of scripts to train on the outputs of the ViT, and learn how to make diffusion decodings.
 
 Here is a quick example on how the patches of a bear image were recovered:
+![alt text](images/prediction_1.png)
+![alt text](images/prediction_3.png)
