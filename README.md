@@ -13,3 +13,9 @@ The first "white pill" moment came when I listened to the different interviews g
 The second "white pill" moment (and possibly the last one I will need) was days ago, when I found out that the VJEPA2 was capable of controlling a Franka Arm, by just watching hours of youtube videos, and then doing a bit of semisupervised learning kind of thing (possibly not semisupervised at all... I am not there yet, still digesting the IJEPA); that felt like a solution to a problem that I was quite curious about solving for the last couple of weeks, and even felt like it would be a great pivot point for DaertML to dedicate the greatest efforts for... Somehow the different approaches that I was considering werent as general and scalable (bitter lesson pilled ;)) as the JEPAs.
 
 And here we are, give 3 or 4 reads to the IJEPA paper, still finding out how to do things from other peoples materials and resources, and with the motivation to work on this until i get to grok the JEPAs and do SSL (Self Supervised Learning) on robotics or other problems in the field.
+
+# Decoding the JEPAs predictions
+As JEPAs generate predictions in the embedding (aka latent space), the human eye is "blind" when it comes to knowing how well the internal representation translates to the real world. Because of that, Meta developed the RCDM repo: to train decoders of latent space. (https://github.com/facebookresearch/RCDM)
+Somehow, the RCDM repo is archived and I was unable to get it working for IJEPA; so decided to get a couple of scripts to train on the outputs of the ViT, and learn how to make diffusion decodings.
+
+Here is a quick example on how the patches of a bear image were recovered:
